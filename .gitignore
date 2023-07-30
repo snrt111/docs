@@ -1,0 +1,30 @@
+# Ignore the public folder, as it will be generated during deployment
+/public
+
+# Ignore the node_modules folder, as it contains dependencies
+/node_modules
+
+# Ignore the .deploy_git folder, as it is used by Hexo for deployment
+.deploy_git
+
+# Ignore the .DS_Store files on macOS
+.DS_Store
+
+# Ignore the Thumbs.db files on Windows
+Thumbs.db
+
+# Ignore the .log and .log.* files
+*.log
+*.log.*
+
+# Ignore the db.json file, as it is used by Hexo to store local data
+db.json
+
+# Ignore the .env file, as it may contain sensitive information
+.env
+
+# Ignore the .bak files
+*.bak
+
+# Ignore the .vscode folder, as it contains Visual Studio Code settings
+.vscode/
