@@ -7,14 +7,14 @@ title: Hexo
 subtitle: ''
 description: ''
 keywords:
-author: John Doe
-language: en
+author: snrt111
+language: zh_cn
 timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: https://snrt111.gitee.io/docs/
-root: /
+root: /docs/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -104,5 +104,5 @@ theme: landscape
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: http://gitee.com/snrt111/docs.git
+  repo: https://gitee.com/snrt111/docs.git
   branch: master
