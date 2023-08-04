@@ -10,6 +10,7 @@ tags:
 在您的 Android 项目中，首先需要添加 AspectJ 相关的依赖和插件。
 
 + 在项目级别的 `build.gradle` 文件中，添加 AspectJ 的 Gradle 插件依赖：
+
 ```gradle
 dependencies {
     classpath 'org.aspectj:aspectjtools:1.9.8'
@@ -18,13 +19,17 @@ dependencies {
 注意:`dependencies` 所在的`buildscript`节点一定要在`plugins`的前面
 
 + 在应用模块的 `build.gradle` 文件中添加以下内容：
+
 在`dependencies`中添加
+
 ```agsl
 dependencies {
     api 'org.aspectj:aspectjrt:1.9.8'
 }
 ```
+
 在`build.gradle`文件下面添加aspectj的编译配置：
+
 ```gradle
 import org.aspectj.bridge.IMessage
 import org.aspectj.bridge.MessageHandler
@@ -101,6 +106,7 @@ public class LoggingAspect {
 ## 3. 构建和运行：
 完成上述步骤后，重新构建您的 Android 项目。AspectJ 将会在编译期间织入您的切面逻辑。
 运行结束如下：
+
 ```agsl
 2023-08-04 20:40:47.160 22060-22060 LoggingAspect           com.snrt.helloworld                  E  after: 12ms
 2023-08-04 20:44:47.954 24627-24627 LoggingAspect           com.snrt.helloworld                  E  方法开始时间: 1691153087954
