@@ -10,7 +10,6 @@ tags:
 在您的 Android 项目中，首先需要添加 AspectJ 相关的依赖和插件。
 
 + 在项目级别的 `build.gradle` 文件中，添加 AspectJ 的 Gradle 插件依赖：
-
 ```gradle
 dependencies {
     classpath 'org.aspectj:aspectjtools:1.9.8'
@@ -67,6 +66,7 @@ variants.all { variant ->
     }
 }
 ```
+
 ## 2. 编写 AspectJ 切面：
 创建一个 Java 类作为您的 AspectJ 切面，用于定义横切逻辑。切面类中定义了一系列切点和通知，以及需要在哪些地方织入这些通知。
 
@@ -97,6 +97,7 @@ public class LoggingAspect {
     }
 }
 ```
+
 ## 3. 构建和运行：
 完成上述步骤后，重新构建您的 Android 项目。AspectJ 将会在编译期间织入您的切面逻辑。
 运行结束如下：
