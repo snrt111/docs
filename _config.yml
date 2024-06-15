@@ -103,6 +103,15 @@ theme: next
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: git
-  repo: https://gitee.com/snrt111/docs.git
-  branch: master
+#  - type: git
+#    repo: https://gitee.com/snrt111/docs.git
+#    branch: master
+  - type: git
+    repo: https://github.com/snrt111/snrt111.github.io.git
+    branch: master
+
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
