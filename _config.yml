@@ -14,7 +14,7 @@ timezone: 'Asia/Shanghai'
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: https://snrt111.gitee.io/docs/
-root: /docs/
+root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -103,6 +103,15 @@ theme: landscape
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: git
-  repo: https://gitee.com/snrt111/docs.git
-  branch: master
+#  - type: git
+#    repo: https://gitee.com/snrt111/docs.git
+#    branch: master
+  - type: git
+    repo: https://github.com/snrt111/snrt111.github.io.git
+    branch: master
+
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000

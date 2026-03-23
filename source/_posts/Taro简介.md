@@ -51,10 +51,17 @@ Taro 3 可以支持转换到 H5、ReactNative 以及任意小程序平台。
 
 示例代码
 
+<<<<<<< HEAD
 ```vue
 <template>
   <view class="index">
     <text>msg</text>
+=======
+```jsx
+<template>
+  <view class="index">
+    <text>{{msg}}</text>
+>>>>>>> ad831483737f742e33d7753c30fc23d15f020a6f
   </view>
 </template>
 
